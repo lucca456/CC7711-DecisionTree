@@ -1,5 +1,4 @@
 # CC7711-DecisionTree
-# CC7711-DecisionTree
 
 # Árvore de Decisão - bank.arff
 
