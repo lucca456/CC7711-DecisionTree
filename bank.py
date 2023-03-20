@@ -7,7 +7,7 @@ from scipy.io import arff
 
 data = arff.loadarff('bank.arff')
 df = pd.DataFrame(data[0])
-df['subscribed'] = df['subscribed'].apply(lambda x: x.decode('utf-8')) # converte a coluna subscribed para string
+df['subscribed'] = df['subscribed'].apply(lambda x: x.decode('utf-8'))
 
 features = df.drop('subscribed', axis=1)
 target = df['subscribed']
