@@ -28,6 +28,7 @@ def bank():
     poutcome = np.asarray(data['poutcome']).reshape(-1,1)
 
     features = np.concatenate((age, loan, marital, education, default, housing, contact, day, month, duration, campaign, pdays, previous, poutcome), axis=1)
+    # features = data
     target = data['subscribed']
     Arvore = DecisionTreeClassifier(criterion='entropy').fit(features, target)
 
